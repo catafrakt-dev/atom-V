@@ -6,6 +6,7 @@ import {Switch, Route} from 'react-router-dom'
 // pages
 import Home from "./home/index.jsx";
 import Contact from "./login/index.jsx";
+import Registration from "./registration/index.jsx";
 
 
 // styles
@@ -19,6 +20,7 @@ export default class App extends React.Component {
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/login' component={Contact}/>
+                    <Route path='/registration' component={Registration}/>
                 </Switch>
 
             </div>

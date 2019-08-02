@@ -5,7 +5,6 @@ export default class Home extends React.Component {
         return (
             <div className="container">
                <MainBlock></MainBlock>
-
             </div>
         )
     }
@@ -18,6 +17,6 @@ class MainBlock extends React.Component{
                <p>Home Page</p>
             </div>
         )
-}
+    }
 }
 

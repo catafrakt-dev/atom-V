@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 export default class Home extends React.Component {
     render() {
         return (
@@ -16,7 +14,7 @@ class Form extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-           login:'',
+            login:'',
             password: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -49,22 +47,32 @@ class Form extends React.Component{
         // axios.post('https://api.example.com/', form)
         //     .then(function (response) {
         //         console.log(response);
+        // this.resetForm();
+
+        // redirect to home after login
+        // this.navigateToHome();
+
+
         //     })
         //     .catch(function (error) {
         //         console.log(error);
+        // this.resetForm();
         //     });
 
         //after sending data you need to clear your state:
 
-        // this.setState({
-        //     name: '',
-        //     email: ''
-        // })
 
-        // redirect to home after login
-        this.navigateToHome();
+
+
 
     };
+
+    resetForm(){
+        this.setState({
+            name: '',
+            email: ''
+        })
+    }
 
     render(){
         return(
@@ -75,7 +83,6 @@ class Form extends React.Component{
                         <input type="text"
                                name="login"
                                id="login"
-                               // value={this.state.login}
                                onChange={this.handleChange}
                                required/>
                     </p>
@@ -83,7 +90,6 @@ class Form extends React.Component{
                         <input type="password"
                                name="password"
                                id="password"
-                               // value={this.state.password}
                                onChange={this.handleChange}
                                required/>
 
