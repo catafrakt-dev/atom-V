@@ -1,13 +1,29 @@
 import React from 'react'
 import atomvpng from '../../../public/ATOMV.png';
 import plus from '../../../public/plus.png';
+import checked from '../../../public/checked.png';
+import settings from '../../../public/settings.png';
+import question from '../../../public/question.png';
+import exit from '../../../public/exit.png';
+import user from '../../../public/user.png';
 
 export default class Main extends React.Component {
     render() {
         return (
             <div className="blockContainer">
+                <AtomVImg></AtomVImg>
                 <Aside></Aside>
                 <Blocks></Blocks>
+            </div>
+        )
+    }
+}
+
+class AtomVImg extends React.Component{
+    render() {
+        return (
+            <div className = "atomv-image-main">
+                <img src={atomvpng} />;
             </div>
         )
     }
@@ -18,11 +34,27 @@ class Aside extends React.Component {
         return (
             <div className='navbar'>
                 <ul>
-                    <li><a href="#">Dima <img className="user" src="user.png" alt="userImg"/></a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">Dima <img className="user" src={user} alt="userImg" /></a></li>
+                    <li>
+                        <a href="#">Tasks
+                            <img className="icons" src={checked} alt="tasks" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ
+                            <img className="question" src={question} alt="faq" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Settings
+                            <img className="settings" src={settings} alt="settings" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Exit
+                            <img className="exit" src={exit} alt="exit/" />
+                        </a>
+                    </li>
                 </ul>
             </div>
         )
@@ -51,10 +83,10 @@ class Blocks extends React.Component {
                 </div>
                 <div className="add">
                     <a href="#">
-                        <div className='image'>
-                            <img src={plus} alt="plus" />
+                        <div>
+                            <img className="image" src={plus} alt="plus" />
                         </div>
-                        <p className="add_task">Add new Task</p>
+                        <p className="add_task">Add new Tasks</p>
                     </a>
                 </div>
             </div>
