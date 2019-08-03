@@ -5,4 +5,4 @@ import history from 'history'
 
 import App from './components/app.jsx'
 
-ReactDOM.render((<BrowserRouter  history={history}><App/></BrowserRouter>), document.getElementById('root'));
+ReactDOM.render((<BrowserRouter history={history}><App/></BrowserRouter>), document.getElementById('root'));

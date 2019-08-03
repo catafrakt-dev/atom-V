@@ -1,10 +1,22 @@
 import React from 'react'
+import atomvpng from '../../../public/ATOMV.png';
 
 export default class Home extends React.Component {
     render() {
         return (
             <div className="formContainer">
+                <AtomVImg></AtomVImg>
                 <Form></Form>
+            </div>
+        )
+    }
+}
+
+class AtomVImg extends React.Component{
+    render() {
+        return (
+            <div className = "atomv-image">
+                <img src={atomvpng} />;
             </div>
         )
     }
@@ -79,23 +91,24 @@ class Form extends React.Component{
             <form onSubmit={this.handleSubmit} className="formWrapper" >
                 <div className="fieldsContainer">
                     <legend>Log In</legend>
-                    <p><label htmlFor="login">Name:</label>
+                    <p>
                         <input type="text"
                                name="login"
                                id="login"
+                               placeholder="Enter ypur username:"
                                onChange={this.handleChange}
                                required/>
                     </p>
-                    <p><label htmlFor="password">E-mail:</label>
+                    <p>
                         <input type="password"
                                name="password"
                                id="password"
+                               placeholder="Enter ypur password:"
                                onChange={this.handleChange}
                                required/>
-
                     </p>
                 </div>
-                <button id="loginFormButton">Submit</button>
+                <button id="loginFormButton">Login</button>
             </form>
         )
     }
