@@ -90,7 +90,6 @@ class Form extends React.Component{
         return(
             <form onSubmit={this.handleSubmit} className="formWrapper" >
                 <div className="fieldsContainer">
-                    <legend>Log In</legend>
                     <p>
                         <input type="text"
                                name="login"

@@ -64,7 +64,7 @@ header{
 
 .atomv-image {
   position: relative;
-  left: 200px;
+  left: 213px;
   width: 50%;
   margin: 0 auto;
     img {
@@ -197,3 +197,4 @@ footer{
 //components styles
 @import './components/contact.scss';
 @import './components/login.scss';
+@import './components/registration.scss';
