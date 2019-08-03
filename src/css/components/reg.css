@@ -1,0 +1,139 @@
+body{
+    background-color: #2C133A;
+}
+
+input[type=text]{
+    position: absolute;
+    width: 260px;
+    height: 38px;
+    left: 590px;
+    top: 424px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 6px 4px rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+input[type=password]{
+    position: absolute;
+    width: 260px;
+    height: 38px;
+    left: 590px;
+    top: 474px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 6px 4px rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+input[type=email]{
+    position: absolute;
+    width: 260px;
+    height: 38px;
+    left: 590px;
+    top: 524px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 6px 4px rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+input[type=phone]{
+    position: absolute;
+    width: 260px;
+    height: 38px;
+    left: 590px;
+    top: 574px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 6px 4px rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+input[type=country]{
+    position: absolute;
+    width: 260px;
+    height: 38px;
+    left: 590px;
+    top: 624px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 6px 4px rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+input[type=checkbox]{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 590px;
+    top: 682px;
+
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+button[type=submit]{
+    position: absolute;
+    width: 148px;
+    height: 28px;
+    left: 646px;
+    top: 712px;
+    
+    background: #8A00FF;
+    box-shadow: 0px 6px 4px rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+span{
+    position: absolute;
+    width: 104px;
+    height: 12px;
+    left: 746px;
+    top: 524px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+svg{
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    left: 464px;
+    top: 0px;
+}
+
+#agree{
+    position: absolute;
+    width: 130px;
+    height: 15px;
+    left: 621px;
+    top: 683px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+}
+
+.icon {
+	background-image: url("/user.svg");
+    position: absolute;
+    left: 39.17%;
+    right: 59.86%;
+    top: 49.24%;
+    bottom: 49.78%;
+    
+    background: #FFFFFF;
+}
