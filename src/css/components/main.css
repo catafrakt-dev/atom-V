@@ -92,9 +92,9 @@ li a:hover {
 .user{
     position: absolute;
     padding: 12px;
-    vertical-align: middle;
-    width: 54px;
-    height: 54px;
+    top: 4%;
+    width: 30px;
+    height: 30px;
     right: 0;
 }
 
@@ -104,7 +104,7 @@ li a:hover {
     height: 21px;
     background-color: #FFFFFF;
     top: 55%;
-    margin-left: 30px ;
+    margin-left: 30px;
 }
 
 .CPU{
@@ -180,10 +180,59 @@ li a:hover {
     left: 780px;
     top: 400px;
 
-    background-color: #2C133A;
     border-radius: 4px;
 }
+
 .image{
-    width: 10%;
-    height: 10%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 10%;
+    left: 40%;
+}
+
+.add_task{
+    font-size: 120%;
+    color: #000000;
+    text-decoration: none;
+    position: absolute;
+    height: 70px;
+    top: 50%;
+    left: 32%;
+}
+
+.question{
+    position: absolute;
+    padding: 12px;
+    top: 45%;
+    width: 30px;
+    height: 30px;
+    right: 0;
+}
+
+.settings{
+    position: absolute;
+    padding: 12px;
+    top: 65%;
+    width: 30px;
+    height: 30px;
+    right: 0;
+}
+
+.exit{
+    position: absolute;
+    padding: 12px;
+    top: 83%;
+    width: 30px;
+    height: 30px;
+    right: 0;
+}
+
+.icons{
+    position: absolute;
+    padding: 12px;
+    top: 23%;
+    width: 40px;
+    height: 40px;
+    right: 0;
 }
