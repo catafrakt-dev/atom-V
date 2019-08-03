@@ -1,0 +1,189 @@
+body{
+    background-image: url('Vector.png')
+}
+
+.menu{
+    position: absolute;
+    width: 230px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+
+    background-color: #2C133A;
+}
+
+.left{
+    position: absolute;
+    width: 344px;
+    height: 164px;
+    left: 300px;
+    top: 112px;
+
+    background-color: #2C133A;
+    border-radius: 4px;
+}
+
+.center{
+    position: absolute;
+    width: 344px;
+    height: 164px;
+    left: 780px;
+    top: 112px;
+
+    background-color: #2C133A;
+    border-radius: 4px;
+}
+
+.right{
+    position: absolute;
+    width: 344px;
+    height: 164px;
+    left: 1250px;
+    top: 112px;
+
+    background-color: #2C133A;
+    border-radius: 4px;
+}
+
+.AtomV{
+    position: absolute;
+    width: 208px;
+    height: 208px;
+    left: 17px;
+    top: -39px;
+    z-index: 2;
+}
+
+.navbar{
+    position: absolute;
+    width: 230px;
+    left: 0px;
+    top: 180px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    background-color: #2C133A;
+  }
+  
+li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    height: 82px;
+
+    line-height: 82px;
+}
+  
+li a:hover {
+    background-color: rgb(35, 6, 53);
+    color: white;
+}
+
+.user{
+    position: absolute;
+    padding: 12px;
+    vertical-align: middle;
+    width: 54px;
+    height: 54px;
+    right: 0;
+}
+
+.bar{
+    position: absolute;
+    width: 280px;
+    height: 21px;
+    background-color: #FFFFFF;
+    top: 55%;
+    margin-left: 30px ;
+}
+
+.CPU{
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+
+    position: absolute;
+    width: 89px;
+    height: 29px;
+    left: 150px;
+    top: 100px;
+    
+}
+
+.Memory{
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+
+    position: absolute;
+    width: 89px;
+    height: 29px;
+    left: 130px;
+    top: 100px;
+}
+
+.Tasks{
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+
+    position: absolute;
+    width: 89px;
+    height: 29px;
+    left: 143px;
+    top: 100px;
+}
+
+.Persent{
+    font-family: Roboto;
+    font-size: 50px;
+    line-height: 28px;
+    color: #ffffff;
+
+    position: absolute;
+    width: 89px;
+    height: 29px;
+    left: 160px;
+    top: -15px;
+}
+
+.Num{
+    font-family: Roboto;
+    font-size: 50px;
+    line-height: 28px;
+    color: #ffffff;
+
+    position: absolute;
+    width: 89px;
+    height: 29px;
+    left: 160px;
+    top: 5px;
+}
+
+.add{
+    position: absolute;
+    width: 344px;
+    height: 164px;
+    left: 780px;
+    top: 400px;
+
+    background-color: #2C133A;
+    border-radius: 4px;
+}
+.image{
+    width: 10%;
+    height: 10%;
+}
