@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import atomvpng from "../../../public/ATOMV.png";
 import user from "../../../public/user.png";
 import checked from "../../../public/checked.png";
@@ -70,7 +71,7 @@ class AddTask extends React.Component {
                 <h2>Create new task</h2>
                 <div className = "flex-button-wrapper">
                     <div className="button_wrapper">
-                        <button>
+                        <button onClick={sendRequest}>
                             Print 'Hello World'!
                             <span></span>
                             <span></span>
@@ -93,3 +94,13 @@ class AddTask extends React.Component {
     }
 }
 
+function sendRequest() {
+    axios.post("http://40.113.13.229:8998/sessions/0/statements", JSON.stringify('{"code": "2 + 2"}'), {
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Content-Type': 'application/json',
+        },
+    }).then(function (response) {
+            console.log(response);
+        })
+}

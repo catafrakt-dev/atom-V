@@ -14,7 +14,7 @@ class MainBlock extends React.Component{
     render(){
         return(
             <div className="mainContainer">
-               <p>Home Page</p>
+               <p className = "greetings">AtomV in our hearts...</p>
             </div>
         )
     }
