@@ -72,7 +72,7 @@ class AddTask extends React.Component {
                 <div className = "flex-button-wrapper">
                     <div className="button_wrapper">
                         <button onClick={sendRequest}>
-                            Print 'Hello World'!
+                            Print '3 + 1'!
                             <span></span>
                             <span></span>
                             <span></span>
