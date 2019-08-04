@@ -1,7 +1,3 @@
-/*body{
-    background-image: url('../../public/Vector.png');
-}*/
-
 .blockContainer {
     width: 100%;
     background: white;
@@ -75,10 +71,20 @@
 
 .navbar{
     border-top: 1px solid #FFBA00;
+    border-bottom: 1px solid #FFBA00;
     position: absolute;
     width: 230px;
     left: 0px;
     top: 180px;
+}
+
+.nav-helper {
+    width: 230px;
+    left: 0px;
+    position: absolute;
+    top: 592px;
+    background-color: #2C133A;
+    height: 353px;
 }
 
 ul {
@@ -183,14 +189,14 @@ li a:hover {
     width: 89px;
     height: 29px;
     left: 160px;
-    top: 5px;
+    top: -13px;
 }
 
 .add{
     position: absolute;
     width: 344px;
     height: 164px;
-    left: 841px;
+    left: 851px;
     top: 400px;
     border-radius: 4px;
 }

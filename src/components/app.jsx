@@ -5,6 +5,7 @@ import Home from "./home/index.jsx";
 import Contact from "./login/index.jsx";
 import Registration from "./registration/index.jsx";
 import Main from "./main/index.jsx";
+import RegisterTask from "./task_creator/index.jsx";
 
 import '../css/app.scss';
 
@@ -17,6 +18,7 @@ export default class App extends React.Component {
                     <Route path='/login' component={Contact}/>
                     <Route path='/registration' component={Registration}/>
                     <Route path='/tasks' component={Main}/>
+                    <Route path='/newtask' component={RegisterTask}/>
                 </Switch>
             </div>
         )

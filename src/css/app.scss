@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 $OpSnsfont: 'Open Sans', sans-serif;
 $borderGeneral: 1px solid black;
 
@@ -19,6 +20,7 @@ body{
   background-color: #fbfafa;
   margin: 0;
 }
+
 header{
   width: 100%;
   margin: 0 auto;
@@ -195,7 +197,7 @@ footer{
 }
 
 //components styles
-@import './components/contact.scss';
 @import './components/login.scss';
 @import './components/registration.scss';
 @import './components/main.scss';
+@import './components/task_creator.scss';

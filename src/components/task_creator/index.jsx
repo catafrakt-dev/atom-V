@@ -1,19 +1,18 @@
-import React from 'react'
-import atomvpng from '../../../public/ATOMV.png';
-import plus from '../../../public/plus.png';
-import checked from '../../../public/checked.png';
-import settings from '../../../public/settings.png';
-import question from '../../../public/question.png';
-import exit from '../../../public/exit.png';
-import user from '../../../public/user.png';
+import React from 'react';
+import atomvpng from "../../../public/ATOMV.png";
+import user from "../../../public/user.png";
+import checked from "../../../public/checked.png";
+import question from "../../../public/question.png";
+import settings from "../../../public/settings.png";
+import exit from "../../../public/exit.png";
 
-export default class Main extends React.Component {
+export default class RegisterTask extends React.Component {
     render() {
         return (
             <div className="blockContainer">
                 <AtomVImg></AtomVImg>
                 <Aside></Aside>
-                <Blocks></Blocks>
+                <AddTask></AddTask>
             </div>
         )
     }
@@ -58,41 +57,39 @@ class Aside extends React.Component {
                         </li>
                     </ul>
                 </div>
-                <div className = "nav-helper"></div>/
+                <div className = "nav-helper"></div>
             </div>
         )
     }
 }
 
-class Blocks extends React.Component {
+class AddTask extends React.Component {
     render() {
         return (
-            <div className="blocks">
-                <div className='Bars'>
-                    <div className='left'>
-                        <div className="bar"></div>
-                        <p className='Persent'>0</p>
-                        <p className='Memory'>Memory</p>
+            <div className="add_task">
+                <h2>Create new task</h2>
+                <div className = "flex-button-wrapper">
+                    <div className="button_wrapper">
+                        <button>
+                            Print 'Hello World'!
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
-                    <div className="center">
-                        <p className='Num'>0</p>
-                        <p className='Tasks'>Tasks</p>
+                    <div className="button_wrapper_two">
+                        <button>
+                            Train your network!
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
-                    <div className="right">
-                        <div className="bar"></div>
-                        <p className='Persent'>0</p>
-                        <p className='CPU'>CPU</p>
-                    </div>
-                </div>
-                <div className="add">
-                    <a href="#">
-                        <div>
-                            <img className="image" src={plus} alt="plus" />
-                        </div>
-                        <p className="add_task">Add new Tasks</p>
-                    </a>
                 </div>
             </div>
         )
     }
 }
+
