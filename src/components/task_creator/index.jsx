@@ -6,6 +6,7 @@ import checked from "../../../public/checked.png";
 import question from "../../../public/question.png";
 import settings from "../../../public/settings.png";
 import exit from "../../../public/exit.png";
+import { exec } from 'child_process';
 
 export default class RegisterTask extends React.Component {
     render() {
@@ -65,13 +66,16 @@ class Aside extends React.Component {
 }
 
 class AddTask extends React.Component {
+    func () {
+        exec("curl 40.113.13.229:8998/sessions/1/statements -X POST -H 'Content-Type: application/json' -d '{\"code\":\"10 + 10\"}'", { encoding: 'utf-8' });
+    }
     render() {
         return (
             <div className="add_task">
                 <h2>Create new task</h2>
                 <div className = "flex-button-wrapper">
                     <div className="button_wrapper">
-                        <button onClick={sendRequest}>
+                        <button onClick={this.func}>
                             Print '3 + 1'!
                             <span></span>
                             <span></span>
@@ -104,3 +108,30 @@ function sendRequest() {
             console.log(response);
         })
 }
+
+
+/*async function sh(cmd) {
+    return new Promise(function (resolve, reject) {
+        exec(cmd, (err, stdout, stderr) => {
+            if (err) {
+                reject(err);
+            } else {
+                resolve({ stdout, stderr });
+            }
+        });
+    });
+}
+
+async function main() {
+    let { stdout } = await sh("curl 40.113.13.229:8998/sessions/1/statements -X POST -H 'Content-Type: application/json' -d '{\"code\":\"2 + 2\"}'");
+    for (let line of stdout.split('\n')) {
+        console.log(`ls: ${line}`);
+    }
+}*/
+
+/*
+function local () {
+    var exec = require('child_process').exec, child;
+    child = exec('curl 40.113.13.229:8998/sessions/0/statements -X POST -H \'Content-Type: application/json\' -d \'{"code":"10 + 10"}\'');
+}*/
+

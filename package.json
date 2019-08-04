@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "author": "atom-v|catafrakt",
   "mode": "development",
+  "browser":{
+    "child_process": true
+  },
   "devtool": "inline-source-map",
   "license": "ISC",
   "devServer": {
@@ -21,6 +24,7 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
+    "child_process": "^1.0.2",
     "file-loader": "^1.1.11",
     "history": "^4.9.0",
     "moment": "^2.22.2",

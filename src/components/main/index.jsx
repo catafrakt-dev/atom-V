@@ -89,7 +89,6 @@ class Blocks extends React.Component {
                         <div>
                             <img className="image" src={plus} alt="plus" />
                         </div>
-                        <p className="add_task">Add new Tasks</p>
                     </a>
                 </div>
             </div>
