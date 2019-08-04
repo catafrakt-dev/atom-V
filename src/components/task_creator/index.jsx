@@ -95,7 +95,7 @@ class AddTask extends React.Component {
 }
 
 function sendRequest() {
-    axios.post("http://40.113.13.229:8998/sessions/0/statements", JSON.stringify('{"code": "2 + 2"}'), {
+    axios.post("http://40.113.13.229:8998/sessions/0/statements", '{"code": "2 + 2"}', {
         headers: {
             'Access-Control-Allow-Origin': '*',
             'Content-Type': 'application/json',
